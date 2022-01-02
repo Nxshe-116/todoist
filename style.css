@@ -70,18 +70,17 @@ img {
 .right-side {
   display: flex;
   position: relative;
-  right: 10px;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  right: 20px;
+  right: 5%px;
   width: 200px;
 }
 .main_body {
   position: absolute;
   display: flex;
-  flex-direction: row;
-  width: 10px;
+  flex-direction: row;  
+  width: 100%;
   top: 40px;
 }
 
@@ -179,11 +178,14 @@ ul {
 }
 
 .body {
-  flex-grow: inherit;
-  width: 1035px;
-  height: 630;
+
+  width: inherit;
+  float: left;
   display: flex;
+  border: #db4c3e solid;
+
  
+  align-items: start;
   flex-direction: column;
   justify-content: last baseline;
 }
@@ -191,16 +193,39 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 90px;
-  width: 950px;
+  width: inherit;
   position: relative;
   bottom: 220px;
 }
+
+.left_side{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 175px;
+    float: left;
+    padding: 10px;
+   
+    align-items: start;
+    padding: 45px;
+
+}
+.right_side{
+    width: 450px;
+    border: #db4c3e solid;
+    float: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+   
+}
 .message_container {
   border-bottom: 1px solid#f6f6f6;
-  width: 100%;
+  width: inherit;
   flex-direction: row;
   padding-left: 10px;
   margin: -2px;
+  left: -097px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -226,11 +251,11 @@ ul {
 }
 
 .m-right {
-  position: relative;
-  left: 550px;
-  width: 150px;
-  display: flex;
-row-gap: 10px;
+    position: relative;
+
+    left:80px;
+    justify-content: space-between;
+    width: 150px;
 }
 .portrait{
     border-radius: 50%;
