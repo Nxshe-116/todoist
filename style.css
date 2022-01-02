@@ -3,9 +3,10 @@
   font-size: 15px;
 }
 body {
-  overflow-x: hidden;
-  height: 100vh;
-}
+    overflow-x: hidden;
+    height: 100vh;
+  }
+
 div {
   display: flex;
   flex-direction: row;
@@ -26,6 +27,7 @@ img {
   flex-direction: row;
   border: 0px solid;
   background-color: #db4c3e;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -70,10 +72,11 @@ img {
 .right-side {
   display: flex;
   position: relative;
+  
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  right: 5%px;
+  right: 2%;
   width: 200px;
 }
 .main_body {
@@ -93,7 +96,7 @@ img {
   display: flex;
   flex-direction: column;
   background-color: #fefefe;
-  border-right: 1px solid #f6f6f6;
+  border-right: 2px solid grey;
   height: 600px;
 }
 .top {
@@ -179,10 +182,10 @@ ul {
 
 .body {
 
-  width: inherit;
+  width: 9000px;
   float: left;
   display: flex;
-  border: #db4c3e solid;
+  
 
  
   align-items: start;
@@ -205,14 +208,14 @@ ul {
     width: 175px;
     float: left;
     padding: 10px;
-   
+
     align-items: start;
     padding: 45px;
 
 }
 .right_side{
-    width: 450px;
-    border: #db4c3e solid;
+    width: 1040px;
+   
     float: left;
     padding: 10px;
     display: flex;
@@ -221,6 +224,7 @@ ul {
 }
 .message_container {
   border-bottom: 1px solid#f6f6f6;
+
   width: inherit;
   flex-direction: row;
   padding-left: 10px;
@@ -230,17 +234,19 @@ ul {
   align-items: center;
 }
 .topPart {
+   
   display: flex;
   width: inherit;
   position: relative;
-  top: 0px;
+  top: 40px;
 
   flex-direction: row;
   justify-content: space-between;
 }
 .heading {
   position: relative;
-  left: 40px;
+  left: 10px;
+
 }
 .options {
   position: relative;
@@ -252,18 +258,43 @@ ul {
 
 .m-right {
     position: relative;
-
-    left:80px;
+    left:670px;
     justify-content: space-between;
     width: 150px;
 }
+
+.mleft-side{
+    position: relative;
+    top: 160px;
+display: flex;
+flex-direction: column;
+float: left;
+width: 50%;
+justify-content: flex-start;
+}
+.mright-side{
+    position: relative;
+    display: flex;
+    top: 160px;
+    flex-direction: column;
+    float: left;
+    width: 50%;
+    justify-content: flex-end;
+    }
 .portrait{
     border-radius: 50%;
 }
 @media (max-width: 500px) {
-  .side-bar {
-    flex-direction: column-reverse;
-    width: fit-content;
+    .nav-bar{
+        width: 100%;
+    }
+    .main_body{
+        width: 100%;
+        
+    }
+  .left_side .top .mid {
+    flex-direction: row;
+    width: min-content;
   }
   ul {
     display: flex;
